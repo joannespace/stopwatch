@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Georgia", serif;
+}
+
+.header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.header button {
+  background-color: white;
+  color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px dotted brown;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+h1 {
+  color: brown;
+}
+
+.hour {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(40, 50, 22);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+button {
+  width: 7rem;
+  border-radius: 5px;
+  border: 2px solid white;
+  color: white;
+  margin: 4px;
+  padding: 8px;
+  box-shadow: 0px 0px 0.5px 0.5px black;
+}
+
+button:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.one {
+  background-color: brown;
+}
+
+.two {
+  background-color: rgb(0, 106, 255);
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  color: rgb(56, 30, 30);
+}
+
+.history-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-line {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 20vh;
+  border: 1px dotted red;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+
+  .hour {
+    font-size: 30px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+} ;
