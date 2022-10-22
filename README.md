@@ -2,7 +2,7 @@
 
 ### Description
 
-- Project requirement: Code the weather app using ReactJS
+- Project requirement: Code the stopwatch app using ReactJS
 - Release date: 21 Oct 2022
 
 Cheers!
