@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
 import "./App.css";
 
@@ -72,22 +72,16 @@ function App() {
           </button>
         </div>
 
-        {isClick ? (
-          <div className="history">
-            <h3>History</h3>
-            <div className="history-box">
-              {history.map((record) => (
-                <div className="history-line" id={Date.now()}>
-                  {record.hour} : {record.minute} : {record.second}
-                </div>
-              ))}
-            </div>
+        <div className="history">
+          <h3>History</h3>
+          <div className="history-box">
+            {history.map((record) => (
+              <div className="history-line" id={Date.now()}>
+                {record.hour} : {record.minute} : {record.second}
+              </div>
+            ))}
           </div>
-        ) : (
-          <div className="history">
-            <h3>No record yet</h3>
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );
